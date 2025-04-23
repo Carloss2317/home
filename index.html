@@ -33,19 +33,17 @@
   <!-- FULLSCREEN CAROUSEL -->
   <section class="relative h-screen overflow-hidden pt-16">
     <div id="carousel" class="w-full h-full relative">
-      <!-- Slide 1 -->
+      <!-- Slides -->
       <div class="absolute inset-0 bg-cover bg-center slide" style="background-image: url('https://source.unsplash.com/1600x900/?catering,food');">
         <div class="w-full h-full bg-black bg-opacity-40 flex items-center justify-center">
           <h1 class="text-white text-4xl md:text-6xl font-bold">Bienvenido a PersonalPaco</h1>
         </div>
       </div>
-      <!-- Slide 2 -->
       <div class="absolute inset-0 bg-cover bg-center slide hidden-slide" style="background-image: url('https://source.unsplash.com/1600x900/?event,party');">
         <div class="w-full h-full bg-black bg-opacity-40 flex items-center justify-center">
           <h1 class="text-white text-4xl md:text-6xl font-bold">Eventos únicos y deliciosos</h1>
         </div>
       </div>
-      <!-- Slide 3 -->
       <div class="absolute inset-0 bg-cover bg-center slide hidden-slide" style="background-image: url('https://source.unsplash.com/1600x900/?chef,foodservice');">
         <div class="w-full h-full bg-black bg-opacity-40 flex items-center justify-center">
           <h1 class="text-white text-4xl md:text-6xl font-bold">Calidad y sabor garantizados</h1>
@@ -54,20 +52,52 @@
     </div>
   </section>
 
+  <!-- GALERÍA EN DOS COLUMNAS -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 px-4">
+      <!-- Columna 1 -->
+      <div class="space-y-4">
+        <img src="https://source.unsplash.com/600x400/?buffet" alt="Buffet" class="rounded-lg shadow-md">
+        <img src="https://source.unsplash.com/600x400/?drinks" alt="Bebidas" class="rounded-lg shadow-md">
+        <img src="https://source.unsplash.com/600x400/?dessert" alt="Postres" class="rounded-lg shadow-md">
+      </div>
+      <!-- Columna 2 -->
+      <div class="space-y-4">
+        <img src="https://source.unsplash.com/600x400/?wedding,food" alt="Boda" class="rounded-lg shadow-md">
+        <img src="https://source.unsplash.com/600x400/?table,food" alt="Mesa servida" class="rounded-lg shadow-md">
+        <img src="https://source.unsplash.com/600x400/?catering,event" alt="Evento" class="rounded-lg shadow-md">
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-800 text-white py-10">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between">
+      <div>
+        <h3 class="text-xl font-semibold mb-2">PersonalPaco</h3>
+        <p class="text-gray-400">Tu confianza es nuestro mejor ingrediente.</p>
+      </div>
+      <div class="mt-6 md:mt-0">
+        <p class="text-gray-400">📞 +51 999 888 777</p>
+        <p class="text-gray-400">✉️ contacto@personalpaco.com</p>
+        <p class="text-gray-400">📍 Huancayo, Perú</p>
+      </div>
+    </div>
+    <div class="text-center text-gray-500 mt-6 text-sm">© 2025 PersonalPaco. Todos los derechos reservados.</div>
+  </footer>
+
   <script>
     const slides = document.querySelectorAll('.slide');
     let current = 0;
-
     function showSlide(index) {
       slides.forEach((slide, i) => {
         slide.classList.toggle('hidden-slide', i !== index);
       });
     }
-
     setInterval(() => {
       current = (current + 1) % slides.length;
       showSlide(current);
-    }, 4000); // cambia de slide cada 4 segundos
+    }, 4000);
   </script>
 
 </body>
