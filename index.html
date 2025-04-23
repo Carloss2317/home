@@ -33,18 +33,20 @@
   <!-- FULLSCREEN CAROUSEL -->
   <section class="relative h-screen overflow-hidden pt-16">
     <div id="carousel" class="w-full h-full relative">
-      <!-- Slides -->
-      <div class="absolute inset-0 bg-cover bg-center slide" style="background-image: url('https://source.unsplash.com/1600x900/?catering,food');">
+      <!-- Slide 1 -->
+      <div class="absolute inset-0 bg-cover bg-center slide" style="background-image: url('img/carru1.png');">
         <div class="w-full h-full bg-black bg-opacity-40 flex items-center justify-center">
           <h1 class="text-white text-4xl md:text-6xl font-bold">Bienvenido a PersonalPaco</h1>
         </div>
       </div>
-      <div class="absolute inset-0 bg-cover bg-center slide hidden-slide" style="background-image: url('https://source.unsplash.com/1600x900/?event,party');">
+      <!-- Slide 2 -->
+      <div class="absolute inset-0 bg-cover bg-center slide hidden-slide" style="background-image: url('img/carru2.png');">
         <div class="w-full h-full bg-black bg-opacity-40 flex items-center justify-center">
           <h1 class="text-white text-4xl md:text-6xl font-bold">Eventos únicos y deliciosos</h1>
         </div>
       </div>
-      <div class="absolute inset-0 bg-cover bg-center slide hidden-slide" style="background-image: url('https://source.unsplash.com/1600x900/?chef,foodservice');">
+      <!-- Slide 3 -->
+      <div class="absolute inset-0 bg-cover bg-center slide hidden-slide" style="background-image: url('img/carru3.png');">
         <div class="w-full h-full bg-black bg-opacity-40 flex items-center justify-center">
           <h1 class="text-white text-4xl md:text-6xl font-bold">Calidad y sabor garantizados</h1>
         </div>
@@ -57,15 +59,15 @@
     <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 px-4">
       <!-- Columna 1 -->
       <div class="space-y-4">
-        <img src="https://source.unsplash.com/600x400/?buffet" alt="Buffet" class="rounded-lg shadow-md">
-        <img src="https://source.unsplash.com/600x400/?drinks" alt="Bebidas" class="rounded-lg shadow-md">
-        <img src="https://source.unsplash.com/600x400/?dessert" alt="Postres" class="rounded-lg shadow-md">
+        <img src="img/buffet.jpg" alt="Buffet" class="rounded-lg shadow-md">
+        <img src="img/bebidas.jpg" alt="Bebidas" class="rounded-lg shadow-md">
+        <img src="img/postres.jpg" alt="Postres" class="rounded-lg shadow-md">
       </div>
       <!-- Columna 2 -->
       <div class="space-y-4">
-        <img src="https://source.unsplash.com/600x400/?wedding,food" alt="Boda" class="rounded-lg shadow-md">
-        <img src="https://source.unsplash.com/600x400/?table,food" alt="Mesa servida" class="rounded-lg shadow-md">
-        <img src="https://source.unsplash.com/600x400/?catering,event" alt="Evento" class="rounded-lg shadow-md">
+        <img src="img/boda.jpg" alt="Boda" class="rounded-lg shadow-md">
+        <img src="img/mesa.jpg" alt="Mesa servida" class="rounded-lg shadow-md">
+        <img src="img/evento.jpg" alt="Evento" class="rounded-lg shadow-md">
       </div>
     </div>
   </section>
@@ -86,6 +88,7 @@
     <div class="text-center text-gray-500 mt-6 text-sm">© 2025 PersonalPaco. Todos los derechos reservados.</div>
   </footer>
 
+  <!-- CARRUSEL SCRIPT -->
   <script>
     const slides = document.querySelectorAll('.slide');
     let current = 0;
